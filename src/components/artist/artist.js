@@ -145,7 +145,7 @@ class Artist extends Component {
 const mapStateToPros = (state) => {
    debugger;
    return {
-      artistList: state.artist.artitsList ? state.artist.artitsList : undefined,
+      artistList: state.artist.artitsList.data,
       error: state.artist.error,
    };
 };
